@@ -6,6 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import "./styles/main.css";
+
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 
@@ -21,7 +22,8 @@ function App() {
         {/* <Route path="/" component={} exact /> */}
       </Switch>
     </Router>
+
   );
-}
+};
 
 export default App;
