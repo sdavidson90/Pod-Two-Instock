@@ -1,9 +1,8 @@
 .product {
-  width: 100%;
   margin: 40px 16px 24px 16px;
 
   &__container {
-    width: 288px;
+    width: 100%;
     margin: auto;
   }
 
@@ -25,6 +24,10 @@
   &__instock-notifier-text {
     color: $color-white;
     font-family: "avenir-demi";
+  }
+
+  &__hr {
+    visibility: hidden;
   }
 
   &__label-description {
@@ -68,12 +71,64 @@
   }
 
   &__edit-btn {
-    width: 288px;
+    width: 100%;
     height: 70px;
     border-radius: 5px;
     border: 1px solid $color-instockblue-dark;
     background-color: $color-instockblue-dark;
     color: $color-white;
     font-family: "avenir-demi";
+  }
+}
+
+@include medium {
+  .product {
+    &__container {
+      width: 720px;
+    }
+
+    &__header {
+      display: flex;
+    }
+
+    &__label-page {
+      margin-right: 24px;
+    }
+
+    &__hr {
+      visibility: visible;
+    }
+
+    &__btn-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__edit-btn {
+      margin-top: 40px;
+      width: 288px;
+    }
+
+    &__info-details {
+      //   display: flex;
+      display: grid;
+      grid-template-columns: 360px 360px;
+    }
+
+    &__label-value-container {
+      margin-right: auto;
+    }
+  }
+}
+
+@include large {
+  .product {
+    &__container {
+      width: 1080px;
+    }
+    &__description-details-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
   }
 }
