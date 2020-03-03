@@ -1,12 +1,24 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import "./styles/main.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Product from "./components/Product";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <Router>
+      <Product />
+      {/* <Switch>
+        <Route path="/locations" component={} />
+        <Route path="/inventory" component={} />
+        <Route path="/product" component={Product} />
+        <Route path="/" component={} exact />
+      </Switch> */}
+    </Router>
   );
 }
 

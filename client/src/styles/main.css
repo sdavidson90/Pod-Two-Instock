@@ -4,5 +4,85 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: unset;
+  font-family: "avenir-regular";
+}
+
+/* media query for mobile 320*/
+/* media query for tablet*/
+/* media query for high pixel density desktops*/
+@font-face {
+  font-family: 'avenir-regular';
+  src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'avenir-demi';
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
+}
+
+@font-face {
+  font-family: 'avenir-bold';
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
+}
+
+.product {
+  width: 100%;
+  margin: 40px 16px 24px 16px;
+}
+
+.product__container {
+  width: 288px;
+  margin: auto;
+}
+
+.product__label-page {
+  font-family: "avenir-bold";
+  margin-bottom: 24px;
+}
+
+.product__instock-notifier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: limegreen;
+  border-radius: 5px;
+}
+
+.product__instock-notifier-text {
+  color: #FFFFFF;
+  font-family: "avenir-demi";
+}
+
+.product__label-description, .product__label-ordered-by, .product__label-ref-num, .product__label-last-ordered, .product__label-location, .product__label-quantity, .product__label-categories {
+  font-family: "avenir-demi";
+  color: #AFAFAF;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.product__item-description, .product__categories {
+  width: 90%;
+}
+
+.product__categories {
+  margin-bottom: 40px;
+}
+
+.product__edit-btn {
+  width: 288px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #002F5F;
+  background-color: #002F5F;
+  color: #FFFFFF;
+  font-family: "avenir-demi";
 }
 /*# sourceMappingURL=main.css.map */
