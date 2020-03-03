@@ -3,4 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: unset;
+  font-family: "avenir-regular";
 }
+
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/product";
