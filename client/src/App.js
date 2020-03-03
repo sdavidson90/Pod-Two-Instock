@@ -1,16 +1,27 @@
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import "./styles/main.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./component/Header";
-import Locations from "./component/Locations";
 
-const App = () => {
-  // return <h1>hi</h1>;
+import Product from "./components/Product";
+
+function App() {
+
   return (
-    <div>
-      <Header />
-      <Locations />
-    </div>
+    <Router>
+      <Product />
+      <Switch>
+        {/* <Route path="/locations" component={} /> */}
+        {/* <Route path="/inventory" component={} /> */}
+        <Route path="/product/:id" component={Product} />
+        {/* <Route path="/" component={} exact /> */}
+      </Switch>
+    </Router>
+
   );
 };
 

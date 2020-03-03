@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: unset;
+  font-family: "avenir-regular";
 }
 
 @import "./partials/breakpoints";
@@ -11,3 +12,5 @@
 @import "./partials/mixins";
 @import "./partials/Header";
 @import "./partials/locations";
+@import "./partials/modal";
+@import "./partials/product";
