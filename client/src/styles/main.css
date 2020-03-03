@@ -10,17 +10,17 @@
 /* media query for tablet*/
 /* media query for high pixel density desktops*/
 @font-face {
-  font-family: 'avenir-regular';
+  font-family: "avenir-regular";
   src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
 }
 
 @font-face {
-  font-family: 'avenir-demi';
+  font-family: "avenir-demi";
   src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
 }
 
 @font-face {
-  font-family: 'avenir-bold';
+  font-family: "avenir-bold";
   src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
 }
 
@@ -28,7 +28,7 @@
 /*Desktop/tablet font*/
 /*background image*/
 .Header {
-  background-color: black;
+  background-color: #323232;
 }
 
 .Header__title--container {
@@ -38,7 +38,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
 }
 
 .Header__title--container__title {
@@ -78,10 +78,6 @@
 }
 
 .Header__nav--link-container:active {
-  border-bottom: 5px solid white;
-}
-
-.Header__nav--link-container-bio {
   border-bottom: 5px solid white;
 }
 
@@ -131,5 +127,85 @@
   .Header__nav--link-container-bio {
     border-bottom: 5px solid white;
   }
+}
+
+.locations {
+  font-family: "avenir-regular";
+  padding: 0rem 1rem;
+}
+
+.locations__top-title {
+  font-family: "avenir-bold";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.locations__top-searchForm {
+  width: 100%;
+}
+
+.locations__top-searchForm-searchWrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-right: 15%;
+}
+
+.locations__top-searchForm-searchWrap-searchInput {
+  font-size: 1rem;
+  text-indent: 2.5rem;
+  color: #afafaf;
+  background-color: #fafafa;
+  border: 2px solid #e1e1e1;
+  border-radius: 0.4rem;
+  height: 3.03rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.locations__top-searchForm-searchWrap-searchInput:focus {
+  outline: none;
+  border-color: #0095FF;
+}
+
+.locations__top-searchForm-searchWrap-img {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1rem;
+}
+
+.locations__item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.locations__item-wrap {
+  margin-bottom: 1rem;
+}
+
+.locations__item-wrap-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.locations__item-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+}
+
+.locations__item-para {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
 }
 /*# sourceMappingURL=main.css.map */
