@@ -138,4 +138,184 @@
         grid-template-columns: 50% 50%;
   }
 }
+
+/* media query for mobile 320*/
+/* media query for tablet*/
+/* media query for high pixel density desktops*/
+@font-face {
+  font-family: 'avenir-regular';
+  src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'avenir-demi';
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
+}
+
+@font-face {
+  font-family: 'avenir-bold';
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
+}
+
+/*Mobile font*/
+/*Desktop/tablet font*/
+/*background image*/
+/*MOBILE*/
+label {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  color: #AFAFAF;
+  font-weight: bold;
+}
+
+.new {
+  min-width: 15.75rem;
+  background-color: #FFFFFF;
+  padding: 2rem 1rem 0;
+}
+
+.new__title {
+  font-family: "avenir-bold";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+  padding-bottom: 2rem;
+}
+
+.new__form-input {
+  width: 100%;
+  height: 3rem;
+  background-color: #FAFAFA;
+  border-radius: 0.25rem;
+  border: 1.5px solid #E1E1E1;
+  padding: 0.625rem;
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+
+.new__form-description {
+  width: 100%;
+  height: 80px;
+  background-color: #FAFAFA;
+  border-radius: 0.25rem;
+  border: 1.5px solid #E1E1E1;
+  padding: 0.625rem;
+  padding-bottom: 3rem;
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.new__form-input:focus, .new__form-description:focus {
+  border: 1.5px solid #004892;
+  outline-width: 0;
+}
+
+.new__form-switch-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new__form-switch-stock {
+  color: #323232;
+}
+
+.button__save, .button__cancel {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  height: 48px;
+  width: 100%;
+  background-color: #004892;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.button__cancel {
+  background-color: #FFFFFF;
+  color: #004892;
+}
+
+.button__save:focus, .button__cancel:focus {
+  outline-width: 0;
+}
+
+/*TABLET/DESK VIEW */
+@media only screen and (min-width: 768px) {
+  .new {
+    max-width: 36rem;
+    height: 39rem;
+    padding: 3.5rem 3rem 2.5rem;
+  }
+  .new__title {
+    font-family: "avenir-bold";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #323232;
+    padding-bottom: 3rem;
+  }
+  .new__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .new__form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .new__form-input {
+    width: 13.75rem;
+  }
+  .new__form-description {
+    width: 30rem;
+  }
+  .button__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: auto;
+  }
+  .button__save {
+    width: 10rem;
+  }
+  .button__cancel {
+    width: 3.75rem;
+    margin-right: 3rem;
+  }
+  .margin {
+    margin-left: 2.5rem;
+    width: 220px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
