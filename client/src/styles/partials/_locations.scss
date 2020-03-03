@@ -8,55 +8,146 @@
       padding-top: 2rem;
       padding-bottom: 1rem;
     }
-    &-searchForm {
-      width: 100%;
-      &-searchWrap {
+    &-wrap {
+      &-itemTitlesWrap {
+        display: none;
+      }
+      &-searchForm {
         width: 100%;
-        // border: 2px solid black;
-        position: relative;
-        margin-bottom: 0.5rem;
-        padding-right: 15%;
-        &-searchInput {
-          // display: flex;
-          // align-items: center;
-          // padding-top: 1%;
-          font-size: 1rem;
-          text-indent: 2.5rem;
-          color: #afafaf;
-          background-color: #fafafa;
-          border: 2px solid #e1e1e1;
-          border-radius: 0.4rem;
-          height: 3.03rem;
+        &-searchWrap {
           width: 100%;
-          margin-bottom: 1.5rem;
-          &:focus {
-            outline: none;
-            border-color: $color-brainflixblue;
+          // border: 2px solid black;
+          position: relative;
+          margin-bottom: 0.5rem;
+          padding-right: 15%;
+          &-searchInput {
+            // display: flex;
+            // align-items: center;
+            // padding-top: 1%;
+            font-size: 1rem;
+            text-indent: 2.5rem;
+            color: #afafaf;
+            background-color: #fafafa;
+            border: 2px solid #e1e1e1;
+            border-radius: 0.4rem;
+            height: 3.03rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            &:focus {
+              outline: none;
+              border-color: $color-brainflixblue;
+            }
+          }
+          &-img {
+            position: absolute;
+            bottom: 2.5rem;
+            left: 1rem;
           }
         }
-        &-img {
-          position: absolute;
-          bottom: 2.5rem;
-          left: 1rem;
+      }
+    }
+    &__item {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $color-silver;
+      &-topWrap {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        display: none;
+        // &-arrowWrap {
+        // // &-img {
+        // }
+        // }
+      }
+      &-manager {
+        &-job {
+          font-style: italic;
         }
+      }
+      &-title {
+        @include mobile-sub;
+      }
+      &-para {
+        @include mobile-para;
       }
     }
   }
-  &__item {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid $color-silver;
-    &-wrap {
-      margin-bottom: 1rem;
-      &-top {
+
+  @include medium {
+    .locations {
+      //   background-color: red;
+      font-family: "avenir-regular";
+      padding: 0rem 1rem;
+      &__top {
         display: flex;
         justify-content: space-between;
+        &-title {
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          @include mobile-header;
+        }
+        &-wrap {
+          &-searchForm {
+            padding-top: 0.75rem;
+            // padding-bottom: 1rem;
+            width: 35vw;
+            &-searchWrap {
+              width: 100%;
+              // border: 2px solid black;
+              position: relative;
+              margin-bottom: 0.5rem;
+              padding-right: 0%;
+              &-searchInput {
+                // display: flex;
+                // align-items: center;
+                // padding-top: 1%;
+                font-size: 1rem;
+                text-indent: 2.5rem;
+                color: #afafaf;
+                background-color: #fafafa;
+                border: 2px solid #e1e1e1;
+                border-radius: 0.4rem;
+                height: 3.03rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                &:focus {
+                  outline: none;
+                  border-color: $color-brainflixblue;
+                }
+              }
+              &-img {
+                position: absolute;
+                bottom: 2.5rem;
+                left: 1rem;
+              }
+            }
+          }
+        }
       }
     }
-    &-title {
-      @include mobile-sub;
-    }
-    &-para {
-      @include mobile-para;
+    &__item {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $color-silver;
+      &-wrap {
+        margin-bottom: 1rem;
+        &-top {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      &-wrapManagerContactCategories {
+        &-manager {
+          &-job {
+            font-style: italic;
+          }
+        }
+        &-title {
+          @include mobile-sub;
+        }
+        &-para {
+          @include mobile-para;
+        }
+      }
     }
   }
 }

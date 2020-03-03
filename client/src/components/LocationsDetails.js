@@ -5,4 +5,4 @@ const LocationsDetails = () => {
   return <section className="LocationsDetails"></section>;
 };
 
-export default Locations;
+export default LocationsDetails;

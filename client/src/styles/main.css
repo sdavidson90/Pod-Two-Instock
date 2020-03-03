@@ -38,7 +38,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
 }
 
 .Header__title--container__title {
@@ -143,18 +143,22 @@
   padding-bottom: 1rem;
 }
 
-.locations__top-searchForm {
+.locations__top-wrap-itemTitlesWrap {
+  display: none;
+}
+
+.locations__top-wrap-searchForm {
   width: 100%;
 }
 
-.locations__top-searchForm-searchWrap {
+.locations__top-wrap-searchForm-searchWrap {
   width: 100%;
   position: relative;
   margin-bottom: 0.5rem;
   padding-right: 15%;
 }
 
-.locations__top-searchForm-searchWrap-searchInput {
+.locations__top-wrap-searchForm-searchWrap-searchInput {
   font-size: 1rem;
   text-indent: 2.5rem;
   color: #afafaf;
@@ -166,46 +170,131 @@
   margin-bottom: 1.5rem;
 }
 
-.locations__top-searchForm-searchWrap-searchInput:focus {
+.locations__top-wrap-searchForm-searchWrap-searchInput:focus {
   outline: none;
   border-color: #0095FF;
 }
 
-.locations__top-searchForm-searchWrap-img {
+.locations__top-wrap-searchForm-searchWrap-img {
   position: absolute;
   bottom: 2.5rem;
   left: 1rem;
 }
 
-.locations__item {
+.locations__top__item {
   padding-bottom: 1rem;
   border-bottom: 1px solid #AFAFAF;
 }
 
-.locations__item-wrap {
+.locations__top__item-topWrap {
   margin-bottom: 1rem;
-}
-
-.locations__item-wrap-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
 }
 
-.locations__item-title {
+.locations__top__item-manager-job {
+  font-style: italic;
+}
+
+.locations__top__item-title {
   font-family: "avenir-demi";
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #323232;
 }
 
-.locations__item-para {
+.locations__top__item-para {
   font-family: "avenir-regular";
   font-size: 0.8125rem;
   line-height: 1.125rem;
   color: #323232;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations .locations {
+    font-family: "avenir-regular";
+    padding: 0rem 1rem;
+  }
+  .locations .locations__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations .locations__top-title {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+  }
+  .locations .locations__top-wrap-searchForm {
+    padding-top: 0.75rem;
+    width: 35vw;
+  }
+  .locations .locations__top-wrap-searchForm-searchWrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-right: 0%;
+  }
+  .locations .locations__top-wrap-searchForm-searchWrap-searchInput {
+    font-size: 1rem;
+    text-indent: 2.5rem;
+    color: #afafaf;
+    background-color: #fafafa;
+    border: 2px solid #e1e1e1;
+    border-radius: 0.4rem;
+    height: 3.03rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .locations .locations__top-wrap-searchForm-searchWrap-searchInput:focus {
+    outline: none;
+    border-color: #0095FF;
+  }
+  .locations .locations__top-wrap-searchForm-searchWrap-img {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+  }
+  .locations__item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #AFAFAF;
+  }
+  .locations__item-wrap {
+    margin-bottom: 1rem;
+  }
+  .locations__item-wrap-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations__item-wrapManagerContactCategories-manager-job {
+    font-style: italic;
+  }
+  .locations__item-wrapManagerContactCategories-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+  }
+  .locations__item-wrapManagerContactCategories-para {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
 }
 /*# sourceMappingURL=main.css.map */

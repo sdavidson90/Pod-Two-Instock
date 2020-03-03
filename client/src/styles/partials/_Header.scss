@@ -9,7 +9,7 @@
   &__title--container {
     display: flex;
     justify-content: center;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 0.5rem 0rem 0rem 0rem;
     // border: 2px solid white;
 
     &__title {
@@ -45,9 +45,9 @@
   //   border-bottom: 5px solid white;
   // }
 }
+
 //tablet
 @include medium {
-  // .Header__container {
   //     // flex-wrap: wrap;
   //     // border: 2px solid white;
   // }

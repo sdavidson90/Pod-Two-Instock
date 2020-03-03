@@ -1,12 +1,33 @@
 [
   {
+    "id": "",
     "WarehouseName": "#WarehouseName",
     "WarehouseNumber": 1,
     "Address": "469 King St W, Toronto, ON",
-    "WarehouseManager": "Mara Weinberg",
-    "PhoneNumber": "+1 416 678 2345",
-    "Email": "weinberg@instack.com",
-    "Categories": "Industrial, Automotive, Heavy, Mechanical,
-Engineering, Transportation"
+    "ContactName": "Mara Weinberg",
+    "ContactJob": "Warehouse Manager",
+    "ContactInfoPhone": "+1 416 678 2345",
+    "ContactInfoEmail": "weinberg@instack.com",
+    "Categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "Inventory": [
+      {
+        "id": "",
+        "Item": "Product Name Here",
+        "ItemDescription": "Here is a very brief description of the product in the inventory…",
+        "LastOrdered": "05/24/2018",
+        "Location": "Toronto, CAN",
+        "Quantity": "12,000",
+        "Status": "In Stock"
+      },
+      {
+        "id": "",
+        "Item": "Product Name Here",
+        "ItemDescription": "Here is a very brief description of the product in the inventory…",
+        "LastOrdered": "05/24/2018",
+        "Location": "Toronto, CAN",
+        "Quantity": "12,000",
+        "Status": "In Stock"
+      }
+    ]
   }
 ]
