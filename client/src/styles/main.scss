@@ -4,3 +4,9 @@
   box-sizing: border-box;
   font-weight: unset;
 }
+
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/mixins";
+@import "./partials/Header";
