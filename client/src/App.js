@@ -12,12 +12,12 @@ function App() {
   return (
     <Router>
       <Product />
-      {/* <Switch>
-        <Route path="/locations" component={} />
-        <Route path="/inventory" component={} />
-        <Route path="/product" component={Product} />
-        <Route path="/" component={} exact />
-      </Switch> */}
+      <Switch>
+        {/* <Route path="/locations" component={} /> */}
+        {/* <Route path="/inventory" component={} /> */}
+        <Route path="/product/:id" component={Product} />
+        {/* <Route path="/" component={} exact /> */}
+      </Switch>
     </Router>
   );
 }
