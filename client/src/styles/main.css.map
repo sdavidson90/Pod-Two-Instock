@@ -8,6 +8,8 @@
         "partials/_colors.scss",
         "partials/_fonts.scss",
         "partials/_mixins.scss",
+        "partials/_Header.scss",
+        "partials/_locations.scss"
         "partials/_modal.scss"
         "partials/_product.scss"
     ],
