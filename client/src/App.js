@@ -7,11 +7,12 @@ import {
 } from "react-router-dom";
 import "./styles/main.css";
 import Product from "./components/Product";
+import Inventory from "./components/Inventory";
 
 function App() {
   return (
     <Router>
-      <Product />
+      <Inventory />
       {/* <Switch>
         <Route path="/locations" component={} />
         <Route path="/inventory" component={} />
