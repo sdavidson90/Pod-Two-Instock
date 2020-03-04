@@ -204,7 +204,6 @@ p {
             justify-content: space-between;
   }
 }
-
 /*MOBILE*/
 label {
   font-family: "avenir-regular";
@@ -379,6 +378,33 @@ label {
 }
 
 .product__instock-notifier {
+
+/* media query for mobile 320*/
+/* media query for tablet*/
+/* media query for high pixel density desktops*/
+@font-face {
+  font-family: "avenir-regular";
+  src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "avenir-demi";
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
+}
+
+/*Mobile font*/
+/*Desktop/tablet font*/
+/*background image*/
+.Header {
+  background-color: #323232;
+}
+
+.Header__title--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,5 +502,3 @@ label {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
-}
-/*# sourceMappingURL=main.css.map */
