@@ -89,7 +89,8 @@ const Inventory = ({ inventoryItem }) => {
           </div>
         </div>
         <div className="inventory__options">
-          <img src={kebab} alt="remove" />
+          <img src={kebab} alt="options" />
+          <span>Remove</span>
         </div>
       </div>
       <button className="inventory__add" onClick={openModal}>
