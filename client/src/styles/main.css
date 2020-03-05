@@ -11,17 +11,17 @@
 /* media query for tablet*/
 /* media query for high pixel density desktops*/
 @font-face {
-  font-family: 'avenir-regular';
+  font-family: "avenir-regular";
   src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
 }
 
 @font-face {
-  font-family: 'avenir-demi';
+  font-family: "avenir-demi";
   src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
 }
 
 @font-face {
-  font-family: 'avenir-bold';
+  font-family: "avenir-bold";
   src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
 }
 
@@ -56,6 +56,13 @@ p {
   display: none;
 }
 
+.inventory__shrink {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .inventory__add {
   background-color: #004892;
   width: 3.75rem;
@@ -64,7 +71,7 @@ p {
   border-radius: 2rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 80vh;
+  bottom: 10vh;
   left: 70vw;
 }
 
@@ -148,6 +155,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1.5px solid #E1E1E1;
 }
 
 .inventory__flex {
@@ -158,7 +166,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: 1.5px solid #E1E1E1;
 }
 
 .inventory__product-margin, .inventory__options {
@@ -167,12 +174,42 @@ p {
 
 .inventory__options {
   padding-right: 0.25rem;
+  height: 0;
 }
 
 /*TABLET SIZING*/
 @media only screen and (min-width: 768px) {
+  p,
+  label {
+    margin: unset;
+  }
+  .inventory {
+    padding: 3rem 1.5rem;
+  }
+  .inventory__add {
+    left: 88vw;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 4rem;
+  }
+  .inventory__add-icon {
+    width: 1.5rem;
+  }
   .inventory__mobile {
     display: none;
+  }
+  .inventory__search {
+    margin: unset;
+  }
+  .inventory__product {
+    padding-bottom: unset;
+  }
+  .inventory__container {
+    height: 6.25rem;
+    padding: 1.5rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .inventory__tablet {
     display: -webkit-box;
@@ -181,9 +218,13 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-bottom: 0.5rem;
   }
-  .inventory__tablet-spacing {
-    padding-left: 6.25rem;
+  .inventory__tablet-right {
+    width: 8rem;
+  }
+  .inventory__tablet-item {
+    width: 12.1875rem;
   }
   .inventory__tablet-product {
     display: -webkit-box;
@@ -193,8 +234,22 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 12.1875rem;
+  }
+  .inventory__tablet-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .inventory__flex {
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -203,7 +258,236 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .inventory__top-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .inventory__title {
+    font-family: "avenir-bold";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #323232;
+    padding-bottom: unset;
+  }
+  .inventory__options {
+    padding-bottom: 2.75rem;
+  }
+  .kebab {
+    width: 7.5rem;
+  }
 }
+
+@media only screen and (min-width: 1440px) {
+  .inventory {
+    padding: 2.5rem 11.25rem;
+  }
+  .inventory__title {
+    padding-top: 0.5rem;
+  }
+  .inventory__container {
+    height: 5rem;
+  }
+  .inventory__shrink {
+    -webkit-line-clamp: 1;
+  }
+  .inventory__tablet-product {
+    width: 17.75rem;
+  }
+  .inventory__tablet-right {
+    width: 10.5625rem;
+  }
+  .kebab {
+    width: 10.0625rem;
+  }
+}
+
+.Header {
+  background-color: #323232;
+}
+
+.Header__title--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.Header__title--container__title {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.Header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+}
+
+.Header__nav--link {
+  text-decoration: none;
+  color: white;
+  font-family: "avenir-regular";
+  font-size: 1rem;
+}
+
+.Header__nav--link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.Header__nav--link-container:active {
+  border-bottom: 5px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+  .Header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .Header__title--container {
+    margin: 0.5rem 3.5rem 0rem 1.5rem;
+  }
+  .Header__nav--link-container {
+    margin: 0rem 3.5rem 0rem 0rem;
+    padding: 2.25rem 0rem 2rem 0rem;
+  }
+  .Header__nav--link-container-bio {
+    border-bottom: 5px solid white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Header__title--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 3.5rem 0rem 11.25rem;
+  }
+  .Header__nav--link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 5rem;
+    margin: 0rem 3.5rem 0rem 0rem;
+    padding: 2.2rem 0rem 2.4rem 0rem;
+  }
+  .Header__nav--link-container-bio {
+    border-bottom: 5px solid white;
+  }
+}
+
+.locations {
+  font-family: "avenir-regular";
+  padding: 0rem 1rem;
+}
+
+.locations__top-title {
+  font-family: "avenir-bold";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.locations__top-searchForm {
+  width: 100%;
+}
+
+.locations__top-searchForm-searchWrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-right: 15%;
+}
+
+.locations__top-searchForm-searchWrap-searchInput {
+  font-size: 1rem;
+  text-indent: 2.5rem;
+  color: #afafaf;
+  background-color: #fafafa;
+  border: 2px solid #e1e1e1;
+  border-radius: 0.4rem;
+  height: 3.03rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.locations__top-searchForm-searchWrap-searchInput:focus {
+  outline: none;
+  border-color: #0095FF;
+}
+
+.locations__top-searchForm-searchWrap-img {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 1rem;
+}
+
+.locations__item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.locations__item-wrap {
+  margin-bottom: 1rem;
+}
+
+.locations__item-wrap-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.locations__item-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+}
+
+.locations__item-para {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+
 /*MOBILE*/
 label {
   font-family: "avenir-regular";
@@ -378,33 +662,6 @@ label {
 }
 
 .product__instock-notifier {
-
-/* media query for mobile 320*/
-/* media query for tablet*/
-/* media query for high pixel density desktops*/
-@font-face {
-  font-family: "avenir-regular";
-  src: url("../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
-}
-
-@font-face {
-  font-family: "avenir-demi";
-  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf);
-}
-
-@font-face {
-  font-family: "avenir-bold";
-  src: url(../assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf);
-}
-
-/*Mobile font*/
-/*Desktop/tablet font*/
-/*background image*/
-.Header {
-  background-color: #323232;
-}
-
-.Header__title--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,3 +759,5 @@ label {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
+}
+/*# sourceMappingURL=main.css.map */

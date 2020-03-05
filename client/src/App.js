@@ -22,8 +22,7 @@ function App() {
         {/* <Route path="/" component={} exact /> */}
       </Switch>
     </Router>
-
   );
-};
+}
 
 export default App;
