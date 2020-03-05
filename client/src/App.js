@@ -10,6 +10,22 @@ import Header from "./components/Header";
 // import Inventory from "./components/Inventory";
 // import Locations from "./components/Locations";
 import Product from "./components/Product";
+import Inventory from "./components/Inventory";
+
+function App() {
+  return (
+    <Router>
+      <Product />
+      {/* <Inventory /> */}
+      <Switch>
+        {/* <Route path="/locations" component={} /> */}
+        <Route path="/inventory" component={Inventory} />
+        <Route path="/product/:id" component={Product} />
+        {/* <Route path="/" component={} exact /> */}
+      </Switch>
+    </Router>
+  );
+}
 
 export default class App extends Component {
   render() {

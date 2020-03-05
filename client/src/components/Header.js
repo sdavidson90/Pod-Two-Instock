@@ -15,6 +15,7 @@ const Header = () => {
       <div className="Header__nav--container">
         <nav className="Header__nav">
           <div className="Header__nav--link-container Header__nav--link-container-bio">
+
             <Link to="/inventory">
               <p className="Header__nav--link">Inventory</p>
             </Link>
@@ -31,4 +32,4 @@ const Header = () => {
 };
 
 export default Header;
-//
+
