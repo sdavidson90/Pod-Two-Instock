@@ -1,12 +1,190 @@
 [
   {
-    "WarehouseName": "#WarehouseName",
-    "WarehouseNumber": 1,
-    "Address": "469 King St W, Toronto, ON",
-    "WarehouseManager": "Mara Weinberg",
-    "PhoneNumber": "+1 416 678 2345",
-    "Email": "weinberg@instack.com",
-    "Categories": "Industrial, Automotive, Heavy, Mechanical,
-Engineering, Transportation"
+    "warehouseId": "",
+    "warehouseName": "#WarehouseName",
+    "warehouseNumber": 1,
+    "address": "469 King St W, Toronto, ON",
+    "contactName": "Mara Weinberg",
+    "contactJob": "Warehouse Manager",
+    "contactInfoPhone": "+1 416 678 2345",
+    "contactInfoEmail": "weinberg@instack.com",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "inventory": [
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      },
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      },
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "warehouseId": "",
+    "warehouseName": "#WarehouseName",
+    "warehouseNumber": 1,
+    "address": "469 King St W, Toronto, ON",
+    "contactName": "Mara Weinberg",
+    "contactJob": "Warehouse Manager",
+    "contactInfoPhone": "+1 416 678 2345",
+    "contactInfoEmail": "weinberg@instack.com",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "inventory": [
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      },
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "lastCustomerOrder": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      },
+      {
+        "productId": "",
+        "productName": "Product Name Here",
+        "description": "Here is a very brief description of the product in the inventory…",
+        "lastOrdered": "05/24/2018",
+        "location": "Toronto, CAN",
+        "quantity": "12,000",
+        "status": "In Stock",
+        "orderHistory": [
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          },
+          {
+            "orderId": "",
+            "orderedBy": "Mark Saunders",
+            "reference": "JK2020FD7811201",
+            "last": "2018-05-24",
+            "location": "Toronto, CAN ",
+            "orderQuantity": "12000"
+          }
+        ]
+      }
+    ]
   }
 ]

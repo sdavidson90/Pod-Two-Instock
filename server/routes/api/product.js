@@ -3,19 +3,19 @@ const router = express.Router();
 const uuid = require("uuid/v4");
 const fs = require("fs");
 
-const productsFile = __dirname + "/../../models/product.json";
+const productsFile = __dirname + "/../../models/instock.json";
 const products = require(productsFile);
 
 router.get("/", (req, res) => {
   const productsList = products.map(product => {
     return {
-      id: product.id,
+      orderId: product.id,
       description: product.description,
-      ordered: product.ordered,
+      orderedBy: product.ordered,
       reference: product.reference,
       last: product.last,
       location: product.location,
-      quantity: product.quantity,
+      orderQuantity: product.quantity,
       categories: product.categories
     };
   });
