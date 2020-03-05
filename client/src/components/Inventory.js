@@ -44,7 +44,9 @@ const Inventory = ({ inventoryItem }) => {
             ITEM
           </label>
           <div className="inventory__tablet-product">
-            <Link className="inventory__product">Product Name Here</Link>
+            <Link to="/product" className="inventory__product">
+              Product Name Here
+            </Link>
             <p>
               Here is a very brief description of the product in the inventory…
             </p>
