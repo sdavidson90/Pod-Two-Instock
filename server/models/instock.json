@@ -1,6 +1,6 @@
 [
   {
-    "warehouseId": "",
+    "warehouseId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
     "warehouseName": "#WarehouseName",
     "warehouseNumber": 1,
     "address": "469 King St W, Toronto, ON",
@@ -11,7 +11,7 @@
     "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
     "inventory": [
       {
-        "productId": "",
+        "productId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c7e11c",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -20,7 +20,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "b8b6930b-d0e8-5bd3-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -28,7 +28,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "b8b6930b-e1f9-4ac2-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "productId": "",
+        "productId": "b0e6931c-d0e8-4ac2-a5d9-ee3049c6d10b",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -47,7 +47,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "b8c6930b-e0f8-4ac2-a5e9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -55,7 +55,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "a8b6930b-c0e8-4ac2-a5c9-ee3049c6c10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -65,7 +65,7 @@
         ]
       },
       {
-        "productId": "",
+        "productId": "a8a6930a-d0e8-4ac2-a5d9-ee3049c6d10b",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -74,7 +74,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c0d10o",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -82,7 +82,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "b8b5550b-d0e8-4ac2-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -94,7 +94,7 @@
     ]
   },
   {
-    "warehouseId": "",
+    "warehouseId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
     "warehouseName": "#WarehouseName",
     "warehouseNumber": 1,
     "address": "469 King St W, Toronto, ON",
@@ -105,7 +105,7 @@
     "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
     "inventory": [
       {
-        "productId": "",
+        "productId": "c0b6930b-d0o7-4ac2-a5d9-ee3049c6d10b",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -114,7 +114,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "b8b6930b-d0e8-4df5-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -122,7 +122,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "b8b6770b-d0e8-4ac2-a4d7-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -132,7 +132,7 @@
         ]
       },
       {
-        "productId": "",
+        "productId": "b009930b-d0e8-4ac2-a5d9-ee3049c6d10b",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -141,7 +141,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "a8b6930b-d0e8-4ac2-a5d9-ie3049c6d10e",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "lastCustomerOrder": "2018-05-24",
@@ -149,7 +149,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "b8b6930b-d00d-4ac2-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -159,7 +159,7 @@
         ]
       },
       {
-        "productId": "",
+        "productId": "a8b7030b-d0e8-4ac2-a5d9-ee3049c6d10b",
         "productName": "Product Name Here",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
@@ -168,7 +168,7 @@
         "status": "In Stock",
         "orderHistory": [
           {
-            "orderId": "",
+            "orderId": "c0b6930b-d0e8-4ac2-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
@@ -176,7 +176,7 @@
             "orderQuantity": "12000"
           },
           {
-            "orderId": "",
+            "orderId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c6d10b",
             "orderedBy": "Mark Saunders",
             "reference": "JK2020FD7811201",
             "last": "2018-05-24",
