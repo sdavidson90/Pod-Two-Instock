@@ -2,67 +2,110 @@
   //   background-color: red;
   font-family: "avenir-regular";
   padding: 0rem 1rem;
+  // width: 100%;
   &__top {
-    &-title {
-      @include mobile-header;
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-    }
+    // width: 100%;
     &-wrap {
       &-itemTitlesWrap {
         display: none;
       }
-      &-searchForm {
-        width: 100%;
-        &-searchWrap {
-          width: 100%;
-          // border: 2px solid black;
-          position: relative;
-          margin-bottom: 0.5rem;
-          padding-right: 15%;
-          &-searchInput {
-            // display: flex;
-            // align-items: center;
-            // padding-top: 1%;
-            font-size: 1rem;
-            text-indent: 2.5rem;
-            color: #afafaf;
-            background-color: #fafafa;
-            border: 2px solid #e1e1e1;
-            border-radius: 0.4rem;
-            height: 3.03rem;
-            width: 100%;
-            margin-bottom: 1.5rem;
-            &:focus {
-              outline: none;
-              border-color: $color-brainflixblue;
-            }
+      &-titleSearchWrap {
+        &-title {
+          @include mobile-header;
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+        }
+        &-itemTitlesWrap {
+          &-title {
+            display: none;
           }
-          &-img {
-            position: absolute;
-            bottom: 2.5rem;
-            left: 1rem;
+        }
+        &-searchForm {
+          width: 100%;
+          &-searchWrap {
+            width: 100%;
+            // border: 2px solid black;
+            position: relative;
+            margin-bottom: 0.5rem;
+            padding-right: 15%;
+            &-searchInput {
+              // display: flex;
+              // align-items: center;
+              // padding-top: 1%;
+              font-size: 1rem;
+              text-indent: 2.5rem;
+              color: #afafaf;
+              background-color: #fafafa;
+              border: 2px solid #e1e1e1;
+              border-radius: 0.4rem;
+              height: 3.03rem;
+              width: 100%;
+              margin-bottom: 1.5rem;
+              &:focus {
+                outline: none;
+                border-color: $color-brainflixblue;
+              }
+            }
+            &-img {
+              position: absolute;
+              bottom: 2.5rem;
+              left: 1rem;
+            }
           }
         }
       }
     }
-    &__item {
-      padding-bottom: 1rem;
-      border-bottom: 1px solid $color-silver;
-      &-topWrap {
-        margin-bottom: 1rem;
-        display: flex;
+  }
+  &__item {
+    // width: 100vw;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-silver;
+    display: flex;
+    &-left {
+      width: 95%;
+      &-wrapManagerContactCategories {
+        // display: flex;
         justify-content: space-between;
-        display: none;
-        // &-arrowWrap {
-        // // &-img {
-        // }
-        // }
-      }
-      &-manager {
-        &-job {
-          font-style: italic;
+        &-manager {
+          width: 10rem;
+          &-title {
+            display: none;
+            color: $color-silver;
+          }
+          &-job {
+            font-style: italic;
+          }
         }
+        &-contact {
+          &-title {
+            display: none;
+            color: $color-silver;
+          }
+          width: 10rem;
+        }
+        &-categories {
+          &-title {
+            display: none;
+            color: $color-silver;
+          }
+          // width: 10rem;
+        }
+      }
+      &-topWrap {
+        // display: flex;
+        // justify-content: space-between;
+        &-title {
+          display: none;
+          color: $color-silver;
+        }
+        &-arrowWrap {
+          &-img {
+            display: none;
+          }
+        }
+      }
+      &-wrap {
+        margin-bottom: 1rem;
       }
       &-title {
         @include mobile-sub;
@@ -72,25 +115,36 @@
       }
     }
   }
+}
 
-  @include medium {
-    .locations {
-      //   background-color: red;
-      font-family: "avenir-regular";
-      padding: 0rem 1rem;
-      &__top {
-        display: flex;
-        justify-content: space-between;
-        &-title {
-          padding-top: 2rem;
-          padding-bottom: 1rem;
-          @include mobile-header;
+@include medium {
+  .locations {
+    //   background-color: red;
+    font-family: "avenir-regular";
+    padding: 0rem 1rem;
+    &__top {
+      &-wrap {
+        &-itemTitlesWrap {
+          display: none;
         }
-        &-wrap {
+        width: 100%;
+        // display: flex;
+        &-titleSearchWrap {
+          display: flex;
+          justify-content: space-between;
+          &-title {
+            @include mobile-header;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+          }
+          &-itemTitlesWrap {
+            display: none;
+          }
           &-searchForm {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
             padding-top: 0.75rem;
-            // padding-bottom: 1rem;
-            width: 35vw;
             &-searchWrap {
               width: 100%;
               // border: 2px solid black;
@@ -126,19 +180,160 @@
       }
     }
     &__item {
-      padding-bottom: 1rem;
-      border-bottom: 1px solid $color-silver;
-      &-wrap {
-        margin-bottom: 1rem;
-        &-top {
+      &-left {
+        // background-color: red;
+        // display: flex;
+        // flex-direction: column;
+        &-wrapManagerContactCategories {
+          // background-color: red;
           display: flex;
-          justify-content: space-between;
+          &-manager {
+            width: 15rem;
+            &-job {
+              font-style: italic;
+            }
+          }
+          &-contact {
+            width: 15rem;
+          }
+          &-categories {
+            width: 15rem;
+          }
+        }
+        &-topWrap {
+          margin-right: 5rem;
+          // display: flex;
+          // justify-content: space-between;
+          // &-words {
+          // }
+        }
+        &-arrowWrap {
+          &-img {
+            display: contents;
+          }
         }
       }
-      &-wrapManagerContactCategories {
-        &-manager {
-          &-job {
-            font-style: italic;
+      &-title {
+        @include mobile-sub;
+      }
+      &-para {
+        @include mobile-para;
+      }
+    }
+  }
+}
+
+@include large {
+  .locations {
+    // padding: 25%;
+    // display: flex;
+    //   background-color: red;
+    font-family: "avenir-regular";
+    padding: 0rem 10rem;
+    &__top {
+      // width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        &-titleSearchWrap {
+          display: flex;
+          &-title {
+            @include mobile-header;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+          }
+        }
+        &-itemTitlesWrap {
+          @include mobile-para;
+          display: contents;
+          display: flex;
+          // justify-content: space-between;
+          color: $color-silver;
+          margin-right: 20rem;
+        }
+        &-searchForm {
+          display: flex;
+          justify-content: flex-end;
+          width: 50%;
+          padding-top: 0.75rem;
+          &-searchWrap {
+            width: 100%;
+            // border: 2px solid black;
+            position: relative;
+            margin-bottom: 0.5rem;
+            padding-right: 0%;
+            &-searchInput {
+              // display: flex;
+              // align-items: center;
+              // padding-top: 1%;
+              font-size: 1rem;
+              text-indent: 2.5rem;
+              color: #afafaf;
+              background-color: #fafafa;
+              border: 2px solid #e1e1e1;
+              border-radius: 0.4rem;
+              height: 3.03rem;
+              width: 100%;
+              margin-bottom: 1.5rem;
+              &:focus {
+                outline: none;
+                border-color: $color-brainflixblue;
+              }
+            }
+            &-img {
+              position: absolute;
+              bottom: 2.5rem;
+              left: 1rem;
+            }
+          }
+        }
+      }
+    }
+    &__item {
+      display: flex;
+      &-left {
+        display: flex;
+        &-wrapManagerContactCategories {
+          display: flex;
+          justify-content: space-between;
+          &-manager {
+            // margin-left: 2rem;
+            // width: 30rem;
+            &-title {
+              display: content;
+            }
+            &-job {
+              font-style: italic;
+            }
+          }
+          &-contact {
+            &-title {
+              display: content;
+            }
+            // width: 20rem;
+          }
+          &-categories {
+            &-title {
+              display: content;
+            }
+            // width: 20rem;
+          }
+        }
+        &-topWrap {
+          width: 20rem;
+          display: flex;
+          justify-content: space-between;
+          &-words {
+            // width: 80vw;
+            // width: 20rem;
+            display: block;
+          }
+          &-arrowWrap {
+            &-img {
+              display: contents;
+            }
           }
         }
         &-title {

@@ -1,0 +1,496 @@
+.LocationsDetails {
+  //   background-color: $color-alabaster;
+  //   display: flex;
+  @include mobile-para;
+  //   padding: 0rem 1rem;
+  &__warehouse {
+    background-color: white;
+    width: 100%;
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    // border-bottom: 1px sold $color-mercury;
+    &-header {
+      display: flex;
+      &-arrowWrap {
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        // &-img {
+        // }
+      }
+      &-title {
+        @include mobile-header;
+        // padding-bottom: 0.75rem;
+      }
+    }
+    &-addressContactWrap {
+      //   display: flex;
+      &-address {
+        flex: 0.5;
+        &-title {
+          @include mobile-sub;
+          color: $color-silver;
+          padding-bottom: 0.5rem;
+        }
+        &-line1 {
+          @include mobile-para;
+        }
+        &-line2 {
+          @include mobile-para;
+        }
+        &-line3 {
+          @include mobile-para;
+        }
+        &-line4 {
+          @include mobile-para;
+          padding-bottom: 0.5rem;
+        }
+      }
+      &-contact {
+        flex: 0.5;
+        &-title {
+          @include mobile-sub;
+          color: $color-silver;
+          padding-bottom: 0.5rem;
+        }
+        //   &-line1 {
+        //   }
+        //   &-line2 {
+        //   }
+        //   &-line3 {
+        //   }
+        &-line4 {
+          @include mobile-para;
+          padding-bottom: 0.5rem;
+        }
+        // padding-bottom: 0.5rem;
+      }
+    }
+  }
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    background-color: $color-alabaster;
+    &-wrap {
+      &-top {
+        &-product {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          &-name {
+            font-family: "avenir-bold";
+            margin-bottom: 0.5rem;
+          }
+          //   &-description {
+          //     // margin-bottom: 0.5rem;
+          //   }
+        }
+        &-lastOrdered {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          &-date {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        &-location {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          &-cityCountry {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        &-quantity {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          &-number {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        &-status {
+          //   margin-bottom: 2%;
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+          }
+          &-inOut {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+  &__dotsWrap {
+    // background-color: red;
+    // left: 1rem;
+    padding-top: 0.5rem;
+    // &-img {
+    // }
+  }
+}
+
+//medium
+@include medium {
+  .LocationsDetails {
+    @include mobile-para;
+    // padding: 0rem 1rem;
+    &__warehouse {
+      width: 100%;
+      //   display: flex;
+      padding-top: 1rem;
+      &-header {
+        display: flex;
+        padding-top: 1rem;
+        border-bottom: 2px solid $color-mercury;
+
+        &-arrowWrap {
+          padding-right: 1rem;
+          padding-bottom: 1rem;
+          &-img {
+            position: relative;
+            top: 0.4rem;
+            height: 1rem;
+          }
+        }
+        &-title {
+          @include mobile-header;
+          // padding: 0.75rem;
+        }
+      }
+      &-addressContactWrap {
+        display: flex;
+        padding: 2% 0%;
+        &-address {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-bottom: 0.5rem;
+          }
+          &-line1 {
+            @include mobile-para;
+          }
+          &-line2 {
+            @include mobile-para;
+            font-style: italic;
+          }
+          &-line3 {
+            @include mobile-para;
+            font-style: italic;
+          }
+          &-line4 {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+            font-style: italic;
+          }
+        }
+        &-contact {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-bottom: 0.5rem;
+          }
+          // &-line1 {
+          // }
+          // &-line2 {
+          // }
+          // &-line3 {
+          // }
+          &-line4 {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        // padding-bottom: 1rem;
+      }
+    }
+
+    &__bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0rem 1rem;
+      background-color: $color-alabaster;
+      border-bottom: 2px solid $color-mercury;
+      &-wrap {
+        &-top {
+          margin-right: 1rem;
+          display: flex;
+          justify-content: space-between;
+          &-product {
+            flex: 0.6;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-name {
+              font-family: "avenir-bold";
+              margin-bottom: 0.5rem;
+            }
+            //   &-description {
+            //     // margin-bottom: 0.5rem;
+            //   }
+          }
+          &-lastOrdered {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-date {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-location {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-cityCountry {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-quantity {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-number {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-status {
+            //   flex: 0.15;
+            //   margin-bottom: 2%;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-inOut {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+    &__dotsWrap {
+      // background-color: red;
+      // left: 1rem;
+      padding-top: 3rem;
+      // &-img {
+      // }
+    }
+  }
+}
+
+//medium
+@include large {
+  .LocationsDetails {
+    @include mobile-para;
+    &__warehouse {
+      padding: 0rem 10rem;
+      width: 100%;
+      //   padding: 0rem 1rem;
+      //   display: flex;
+      padding-top: 1rem;
+      &-header {
+        display: flex;
+        padding-top: 1rem;
+        border-bottom: 2px solid $color-mercury;
+
+        &-arrowWrap {
+          padding-right: 1rem;
+          padding-bottom: 1rem;
+          &-img {
+            position: relative;
+            top: 0.4rem;
+            height: 1rem;
+          }
+        }
+        &-title {
+          @include mobile-header;
+          // padding: 0.75rem;
+        }
+      }
+      &-addressContactWrap {
+        display: flex;
+        padding: 2% 0%;
+        &-address {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-bottom: 0.5rem;
+          }
+          &-line1 {
+            @include mobile-para;
+          }
+          &-line2 {
+            @include mobile-para;
+            font-style: italic;
+          }
+          &-line3 {
+            @include mobile-para;
+            font-style: italic;
+          }
+          &-line4 {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+            font-style: italic;
+          }
+        }
+        &-contact {
+          &-title {
+            @include mobile-sub;
+            color: $color-silver;
+            padding-bottom: 0.5rem;
+          }
+          // &-line1 {
+          // }
+          // &-line2 {
+          // }
+          // &-line3 {
+          // }
+          &-line4 {
+            @include mobile-para;
+            padding-bottom: 0.5rem;
+          }
+        }
+        // padding-bottom: 1rem;
+      }
+    }
+
+    &__bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0rem 10rem;
+      background-color: $color-alabaster;
+      border-bottom: 2px solid $color-mercury;
+      &-wrap {
+        width: 100%;
+        background-color: $color-alabaster;
+        &-top {
+          // margin: 0rem 5rem;
+          margin-right: 1rem;
+          display: flex;
+          justify-content: space-between;
+          &-product {
+            flex: 0.6;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-name {
+              font-family: "avenir-bold";
+              margin-bottom: 0.5rem;
+            }
+            //   &-description {
+            //     // margin-bottom: 0.5rem;
+            //   }
+          }
+          &-lastOrdered {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-date {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-location {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-cityCountry {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-quantity {
+            //   flex: 0.15;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-number {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-status {
+            //   flex: 0.15;
+            //   margin-bottom: 2%;
+            &-title {
+              @include mobile-sub;
+              color: $color-silver;
+              padding-top: 1rem;
+              padding-bottom: 0.5rem;
+            }
+            &-inOut {
+              @include mobile-para;
+              padding-bottom: 0.5rem;
+            }
+          }
+          padding-bottom: 0.5rem;
+        }
+      }
+      &__dotsWrap {
+        // background-color: red;
+        // left: 1rem;
+        padding-top: 3rem;
+        // &-img {
+        // }
+      }
+    }
+  }
+}
