@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
   const productsList = products.map(product => {
     return {
       id: product.id,
+      product: product.product,
       description: product.description,
       ordered: product.ordered,
       reference: product.reference,
