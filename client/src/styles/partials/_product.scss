@@ -1,0 +1,134 @@
+.product {
+  margin: 40px 16px 24px 16px;
+
+  &__container {
+    width: 100%;
+    margin: auto;
+  }
+
+  &__label-page {
+    font-family: "avenir-bold";
+    margin-bottom: 24px;
+  }
+
+  &__instock-notifier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: limegreen;
+    border-radius: 5px;
+  }
+
+  &__instock-notifier-text {
+    color: $color-white;
+    font-family: "avenir-demi";
+  }
+
+  &__hr {
+    visibility: hidden;
+  }
+
+  &__label-description {
+    font-family: "avenir-demi";
+    color: $color-silver;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__item-description {
+    width: 90%;
+  }
+
+  &__label-ordered-by {
+    @extend .product__label-description;
+  }
+
+  &__label-ref-num {
+    @extend .product__label-description;
+  }
+
+  &__label-last-ordered {
+    @extend .product__label-description;
+  }
+
+  &__label-location {
+    @extend .product__label-description;
+  }
+
+  &__label-quantity {
+    @extend .product__label-description;
+  }
+
+  &__label-categories {
+    @extend .product__label-description;
+  }
+
+  &__categories {
+    @extend .product__item-description;
+    margin-bottom: 40px;
+  }
+
+  &__edit-btn {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid $color-instockblue-dark;
+    background-color: $color-instockblue-dark;
+    color: $color-white;
+    font-family: "avenir-demi";
+  }
+}
+
+@include medium {
+  .product {
+    &__container {
+      width: 720px;
+    }
+
+    &__header {
+      display: flex;
+    }
+
+    &__label-page {
+      margin-right: 24px;
+    }
+
+    &__hr {
+      visibility: visible;
+    }
+
+    &__btn-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__edit-btn {
+      margin-top: 40px;
+      width: 288px;
+    }
+
+    &__info-details {
+      //   display: flex;
+      display: grid;
+      grid-template-columns: 360px 360px;
+    }
+
+    &__label-value-container {
+      margin-right: auto;
+    }
+  }
+}
+
+@include large {
+  .product {
+    &__container {
+      width: 1080px;
+    }
+    &__description-details-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+}

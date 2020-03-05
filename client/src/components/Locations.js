@@ -2,6 +2,7 @@ import React from "react";
 import searchIcon from "../assets/Icons/SVG/Icon-search.svg";
 import rightArrow from "../assets/Icons/SVG/Icon-arrow-right.svg";
 
+
 const Locations = () => {
   return (
     <section className="locations">
