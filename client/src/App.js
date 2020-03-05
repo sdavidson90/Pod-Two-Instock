@@ -7,11 +7,22 @@ import {
 } from "react-router-dom";
 import "./styles/main.css";
 
+
+import Locations from "./components/Locations";
+import LocationsDetails from "./components/LocationsDetails";
+import Header from "./components/Header";
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 
 function App() {
   return (
+
+    <div>
+      <Header />
+      {/* <Locations /> */}
+      <LocationsDetails />
+    </div>
+
     <Router>
       <Product />
       {/* <Inventory /> */}
