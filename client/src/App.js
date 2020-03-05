@@ -9,11 +9,22 @@ import "./styles/main.css";
 import Header from "./components/Header";
 // import Inventory from "./components/Inventory";
 // import Locations from "./components/Locations";
+
+
+import Locations from "./components/Locations";
+import LocationsDetails from "./components/LocationsDetails";
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 
 function App() {
   return (
+
+    <div>
+      <Header />
+      {/* <Locations /> */}
+      <LocationsDetails />
+    </div>
+
     <Router>
       <Product />
       {/* <Inventory /> */}
