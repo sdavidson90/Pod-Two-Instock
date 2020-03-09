@@ -1,8 +1,7 @@
 [
   {
-
     "warehouseId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
-    "warehouseName": "#WarehouseName",
+    "warehouseName": "Warehouse Number ",
     "warehouseNumber": 1,
     "address": "469 King St W, Toronto, ON",
     "contactName": "Mara Weinberg",
@@ -185,5 +184,7 @@
             "orderQuantity": "12000"
           }
         ]
+      }
+    ]
   }
 ]

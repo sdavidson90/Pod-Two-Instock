@@ -7,18 +7,18 @@ const productsFile = __dirname + "/../../models/instock.json";
 const products = require(productsFile);
 
 router.get("/", (req, res) => {
-  // const productsList = products.map(product => {
-  //   return {
-  //     orderId: product.warehouseId
-  //     description: product.description
-  //     orderedBy: product.ordered,
-  //     reference: product.reference,
-  //     last: product.last,
-  //     location: product.location,
-  //     orderQuantity: product.quantity,
-  //     categories: product.categories
-  //   };
-  // });
+  const productsList = products.map(product => {
+    return {
+      orderId: product.warehouseId,
+      description: product.description,
+      orderedBy: product.ordered,
+      reference: product.reference,
+      last: product.last,
+      location: product.location,
+      orderQuantity: product.quantity,
+      categories: product.categories
+    };
+  });
   res.json(products);
 });
 
