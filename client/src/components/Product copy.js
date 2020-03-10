@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import axios from "axios";
 
 export default class Product extends Component {
+  state = {
+    instock: "",
+    loading: true
+  };
+
   componentDidMount() {
     // const prodId = match.params.id;
     axios.get(`/api/`).then(response => {

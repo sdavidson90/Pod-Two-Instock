@@ -11,9 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api", productRoutes);
-<<<<<<< HEAD
-=======
 app.use("/api", locationsRoutes);
->>>>>>> a18ebe40d43e94cb341455d8be0cb717c82dc224
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
