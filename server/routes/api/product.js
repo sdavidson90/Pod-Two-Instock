@@ -35,14 +35,14 @@ function writeJSONFile(filename, content) {
 
 router.post("/", (req, res) => {
   const newProduct = {
+    inventoryId: uuid(),
     productId: uuid(),
     description: req.body.description,
     orderedBy: req.body.ordered,
     reference: req.body.reference,
     lastOrdered: req.body.last,
     location: req.body.location,
-    quantity: req.body.quantity,
-    categories: req.body.categories
+    quantity: req.body.quantity
   };
   products.push(newProduct);
   writeJSONFile(productsFile, products);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Switch from "react-switch";
+import axios from "axios";
 //CHANGE THE WIDTH FOR MOBILE BEFORE FINISH
 class Modal extends Component {
   constructor() {
@@ -12,12 +13,28 @@ class Modal extends Component {
     this.setState({ checked });
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+    axios
+      .post("/api/product", {
+        productName: event.target.product.value,
+        lastOrdered: event.target.date.value,
+        location: event.target.city.value + ", " + event.target.country.value,
+        quantity: event.target.quantity.value,
+        status: event.target.status.value,
+        description: event.target.description.value
+      })
+      .then(response => {
+        const posted = response.data;
+      });
+  }
+
   render() {
     return (
       <div className="modal">
         <div className="new">
           <h1 className="new__title">Create New</h1>
-          <form className="new__form">
+          <form className="new__form" onSubmit={this.handleSubmit}>
             <div className="new__form-flex">
               <label>PRODUCT</label>
               <input
@@ -80,6 +97,7 @@ class Modal extends Component {
                   width={40}
                   className="react-switch"
                   id="material-switch"
+                  name="status"
                 />
               </div>
             </label>
