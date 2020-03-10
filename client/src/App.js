@@ -7,15 +7,37 @@ import {
 } from "react-router-dom";
 import "./styles/main.css";
 import Header from "./components/Header";
+<<<<<<< HEAD
+=======
 // import Inventory from "./components/Inventory";
 // import Locations from "./components/Locations";
 
 import Locations from "./components/Locations";
 import LocationsDetails from "./components/LocationsDetails";
 import Product from "./components/Product";
+>>>>>>> a18ebe40d43e94cb341455d8be0cb717c82dc224
 import Inventory from "./components/Inventory";
+import Locations from "./components/Locations";
+import LocationsDetails from "./components/LocationsDetails";
+import Product from "./components/Product";
 
 export default class App extends Component {
+<<<<<<< HEAD
+  render() {
+    return (
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/inventory" component={Inventory} />
+          <Route path="/locations" component={Locations} />
+          <Route path="/product" component={Product} />
+          <Redirect to="/inventory" from="/" exact />
+        </Switch>
+      </Router>
+    );
+  }
+}
+=======
   // state = {};
 
   render() {
@@ -67,3 +89,4 @@ export default class App extends Component {
 //     );
 //   }
 // }
+>>>>>>> a18ebe40d43e94cb341455d8be0cb717c82dc224
