@@ -8,9 +8,6 @@ import {
 import "./styles/main.css";
 import axios from "axios";
 import Header from "./components/Header";
-import Locations from "./components/Locations";
-import LocationsDetails from "./components/LocationsDetails";
-import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 import Locations from "./components/Locations";
 import LocationsDetails from "./components/LocationsDetails";

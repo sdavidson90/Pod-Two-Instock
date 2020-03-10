@@ -2,16 +2,12 @@ import React, { Component } from "react";
 import axios from "axios";
 
 export default class Product extends Component {
-  state = {
-    instock: "",
-    loading: true
-  };
-
   componentDidMount() {
     // const prodId = match.params.id;
     axios.get(`/api/`).then(response => {
       console.log(response.data[0].inventory);
       // get active inventory id then look for product id
+
       this.setState({ instock: response.data, loading: false });
     });
   }

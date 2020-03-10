@@ -9,12 +9,7 @@ const products = require(productsFile);
 router.post("/", (req, res) => {
   const productsList = products.map(product => {
     return {
-<<<<<<< HEAD
-      id: product.id,
-      product: product.product,
-=======
       orderId: product.warehouseId,
->>>>>>> a18ebe40d43e94cb341455d8be0cb717c82dc224
       description: product.description,
       orderedBy: product.ordered,
       reference: product.reference,
@@ -24,22 +19,6 @@ router.post("/", (req, res) => {
       categories: product.categories
     };
   });
-<<<<<<< HEAD
-  res.json(productsList);
-  // const productsList = products.map(product => {
-  //   return {
-  //     orderId: product.inventory.orderHistory[0].orderId,
-  //     description: product.inventory.description,
-  //     orderedBy: product.inventory.orderHistory[0].orderedBy,
-  //     reference: product.inventory.orderHistory[0].reference,
-  //     last: product.inventory.orderHistory[0].last,
-  //     location: product.inventory.location,
-  //     orderQuantity: product.inventory.orderHistory[0].orderQuantity,
-  //     categories: product.categories
-  //   };
-  // });
-=======
->>>>>>> a18ebe40d43e94cb341455d8be0cb717c82dc224
   res.json(products);
 });
 

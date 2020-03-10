@@ -18,7 +18,7 @@ export default class Inventory extends Component {
     });
   }
   render() {
-    console.log(this.state.invList);
+    // console.log(this.state.invList);
     return (
       <div className="inventory">
         <div className="inventory__top-flex">
@@ -49,7 +49,7 @@ export default class Inventory extends Component {
             </label>
           </div>
         </div>
-        {this.state.invList.map(invArr => {
+        {/* {this.state.invList.map(invArr => {
           return (
             <div className="inventory__container">
               <div className="inventory__flex">
@@ -86,7 +86,7 @@ export default class Inventory extends Component {
               </div>
             </div>
           );
-        })}
+        })} */}
         <Addbutton />
       </div>
     );
