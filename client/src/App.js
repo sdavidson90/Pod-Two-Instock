@@ -8,24 +8,15 @@ import {
 import "./styles/main.css";
 import axios from "axios";
 import Header from "./components/Header";
-// import Inventory from "./components/Inventory";
-// import Locations from "./components/Locations";
 import Locations from "./components/Locations";
 import LocationsDetails from "./components/LocationsDetails";
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
+import Locations from "./components/Locations";
+import LocationsDetails from "./components/LocationsDetails";
+import Product from "./components/Product";
 
 export default class App extends Component {
-  state = {
-    instock: [],
-    loading: true
-  };
-  componentDidMount() {
-    axios.get(`/api`).then(response => {
-      this.setState({ instock: response.data, loading: false });
-    });
-  }
-
   render() {
     return (
       <Router>
