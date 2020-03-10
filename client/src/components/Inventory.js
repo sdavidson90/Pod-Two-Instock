@@ -7,20 +7,19 @@ import axios from "axios";
 
 export default class Inventory extends Component {
   state = {
-    instock: "",
+    invList: "",
     loading: true
   };
 
   componentDidMount() {
     axios.get("/api/").then(res => {
-      let instock = res.data;
-      this.setState({ instock, loading: false });
+      let invList = res.data;
+      this.setState({ invList, loading: false });
     });
   }
   render() {
-    return this.state.loading && this.state.instock !== undefined ? (
-      <h1>Loading..</h1>
-    ) : (
+    console.log(this.state.invList);
+    return (
       <div className="inventory">
         <div className="inventory__top-flex">
           <h1 className="inventory__title">Inventory</h1>
@@ -50,43 +49,44 @@ export default class Inventory extends Component {
             </label>
           </div>
         </div>
-        {/* {invArr} */}
-        <div className="inventory__container">
-          <div className="inventory__flex">
-            {/* THIS DIV ABOVE GOES TO THE MAP FUNCTION ABOVE WHEN BACKEND IS DONEZO */}
-            {/* LABEL IS HARD CODED AND P TAGS ARE NOT */}
-            <label className="inventory__product-margin inventory__mobile">
-              ITEM
-            </label>
-            <div className="inventory__tablet-product">
-              <Link to="/product" className="inventory__product">
-                {this.state.instock[0].inventory[0].productName}
-              </Link>
-              <p className="inventory__shrink">
-                {this.state.instock[0].inventory[0].description}
-              </p>
+        {this.state.invList.map(invArr => {
+          return (
+            <div className="inventory__container">
+              <div className="inventory__flex">
+                <label className="inventory__product-margin inventory__mobile">
+                  ITEM
+                </label>
+                <div className="inventory__tablet-product">
+                  <Link to="/product" className="inventory__product">
+                    {this.state.invArr[0].inventory[0].productName}
+                  </Link>
+                  <p className="inventory__shrink">
+                    {this.state.invArr[0].inventory[0].description}
+                  </p>
+                </div>
+                <div className="inventory__tablet-stats">
+                  <label className="inventory__mobile">LAST ORDERED</label>
+                  <p className="inventory__tablet-right">
+                    {this.state.invArr[0].inventory[0].lastOrdered}
+                  </p>
+                  <label className="inventory__mobile">LOCATION</label>
+                  <p className="inventory__tablet-right">
+                    {this.state.invArr[0].inventory[0].location}
+                  </p>
+                  <label className="inventory__mobile">QUANTITY</label>
+                  <p className="inventory__tablet-right">
+                    {this.state.invArr[0].inventory[0].quantity}
+                  </p>
+                  <label className="inventory__mobile">STATUS</label>
+                  <p className="inventory__tablet-right kebab">In Stock</p>
+                </div>
+              </div>
+              <div className="inventory__options">
+                <img src={kebab} alt="options" />
+              </div>
             </div>
-            <div className="inventory__tablet-stats">
-              <label className="inventory__mobile">LAST ORDERED</label>
-              <p className="inventory__tablet-right">
-                {this.state.instock[0].inventory[0].lastOrdered}
-              </p>
-              <label className="inventory__mobile">LOCATION</label>
-              <p className="inventory__tablet-right">
-                {this.state.instock[0].inventory[0].location}
-              </p>
-              <label className="inventory__mobile">QUANTITY</label>
-              <p className="inventory__tablet-right">
-                {this.state.instock[0].inventory[0].quantity}
-              </p>
-              <label className="inventory__mobile">STATUS</label>
-              <p className="inventory__tablet-right kebab">In Stock</p>
-            </div>
-          </div>
-          <div className="inventory__options">
-            <img src={kebab} alt="options" />
-          </div>
-        </div>
+          );
+        })}
         <Addbutton />
       </div>
     );
