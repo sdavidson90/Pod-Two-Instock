@@ -1,0 +1,80 @@
+[
+  {
+    "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
+    "productId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c7e11c",
+    "productName": "Product 1",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  },
+  {
+    "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
+    "productId": "b0e6931c-d0e8-4ac2-a5d9-ee3049c6d10b",
+    "productName": "Product 2",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  },
+  {
+    "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
+    "productId": "a8a6930a-d0e8-4ac2-a5d9-ee3049c6d10b",
+    "productName": "Product 3",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  },
+  {
+    "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
+    "productId": "c0b6930b-d0o7-4ac2-a5d9-ee3049c6d10b",
+    "productName": "Product 4",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  },
+  {
+    "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
+    "productId": "b009930b-d0e8-4ac2-a5d9-ee3049c6d10b",
+    "productName": "Product 5",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  },
+  {
+    "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
+    "productId": "a8b7030b-d0e8-4ac2-a5d9-ee3049c6d10b",
+    "productName": "Product 6",
+    "description": "Here is a very brief description of the product in the inventory…",
+    "lastOrdered": "05/24/2018",
+    "location": "Toronto, CAN",
+    "quantity": "12,000",
+    "status": "In Stock",
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
+    "orderedBy": "Mark Saunders",
+    "reference": "JK2020FD7811201"
+  }
+]
