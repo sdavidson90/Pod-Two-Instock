@@ -7,19 +7,19 @@ import axios from "axios";
 
 export default class Inventory extends Component {
   state = {
-    invList: "",
+    invList: [],
     loading: true
   };
 
   componentDidMount() {
-    axios.get("/api/").then(res => {
-      let invList = res.data;
-      this.setState({ invList, loading: false });
+    axios.get("/api/inventory").then(response => {
+      this.setState({ invList: response.data, loading: false });
     });
   }
   render() {
-    // console.log(this.state.invList);
-    return (
+    return this.state.loading && this.state.instock !== [] ? (
+      <h1>Loading..</h1>
+    ) : (
       <div className="inventory">
         <div className="inventory__top-flex">
           <h1 className="inventory__title">Inventory</h1>
@@ -49,7 +49,7 @@ export default class Inventory extends Component {
             </label>
           </div>
         </div>
-        {/* {this.state.invList.map(invArr => {
+        {this.state.invList.map(inv => {
           return (
             <div className="inventory__container">
               <div className="inventory__flex">
@@ -57,26 +57,21 @@ export default class Inventory extends Component {
                   ITEM
                 </label>
                 <div className="inventory__tablet-product">
-                  <Link to="/product" className="inventory__product">
-                    {this.state.invArr[0].inventory[0].productName}
+                  <Link
+                    to={`/product/${inv.productId}`}
+                    className="inventory__product"
+                  >
+                    {inv.productName}
                   </Link>
-                  <p className="inventory__shrink">
-                    {this.state.invArr[0].inventory[0].description}
-                  </p>
+                  <p className="inventory__shrink">{inv.description}</p>
                 </div>
                 <div className="inventory__tablet-stats">
                   <label className="inventory__mobile">LAST ORDERED</label>
-                  <p className="inventory__tablet-right">
-                    {this.state.invArr[0].inventory[0].lastOrdered}
-                  </p>
+                  <p className="inventory__tablet-right">{inv.lastOrdered}</p>
                   <label className="inventory__mobile">LOCATION</label>
-                  <p className="inventory__tablet-right">
-                    {this.state.invArr[0].inventory[0].location}
-                  </p>
+                  <p className="inventory__tablet-right">{inv.location}</p>
                   <label className="inventory__mobile">QUANTITY</label>
-                  <p className="inventory__tablet-right">
-                    {this.state.invArr[0].inventory[0].quantity}
-                  </p>
+                  <p className="inventory__tablet-right">{inv.quantity}</p>
                   <label className="inventory__mobile">STATUS</label>
                   <p className="inventory__tablet-right kebab">In Stock</p>
                 </div>
@@ -86,7 +81,7 @@ export default class Inventory extends Component {
               </div>
             </div>
           );
-        })} */}
+        })}
         <Addbutton />
       </div>
     );
