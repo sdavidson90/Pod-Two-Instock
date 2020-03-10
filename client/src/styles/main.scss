@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-weight: unset;
   font-family: "avenir-regular";
+  text-decoration: none;
 }
 
 @import "./partials/breakpoints";
@@ -13,5 +14,6 @@
 @import "./partials/inventory";
 @import "./partials/header";
 @import "./partials/locations";
+@import "./partials/locationsDetails";
 @import "./partials/modal";
 @import "./partials/product";

@@ -5,6 +5,7 @@
           box-sizing: border-box;
   font-weight: unset;
   font-family: "avenir-regular";
+  text-decoration: none;
 }
 
 /* media query for mobile 320*/
@@ -317,7 +318,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
 }
 
 .Header__title--container__title {
@@ -356,10 +357,6 @@ p {
           flex: 0.5;
 }
 
-.Header__nav--link-container:active {
-  border-bottom: 5px solid white;
-}
-
 @media only screen and (min-width: 768px) {
   .Header {
     display: -webkit-box;
@@ -377,9 +374,6 @@ p {
   .Header__nav--link-container {
     margin: 0rem 3.5rem 0rem 0rem;
     padding: 2.25rem 0rem 2rem 0rem;
-  }
-  .Header__nav--link-container-bio {
-    border-bottom: 5px solid white;
   }
 }
 
@@ -403,9 +397,6 @@ p {
     margin: 0rem 3.5rem 0rem 0rem;
     padding: 2.2rem 0rem 2.4rem 0rem;
   }
-  .Header__nav--link-container-bio {
-    border-bottom: 5px solid white;
-  }
 }
 
 .locations {
@@ -413,7 +404,11 @@ p {
   padding: 0rem 1rem;
 }
 
-.locations__top-title {
+.locations__top-wrap-itemTitlesWrap {
+  display: none;
+}
+
+.locations__top-wrap-titleSearchWrap-title {
   font-family: "avenir-bold";
   font-size: 1.5rem;
   line-height: 2rem;
@@ -422,18 +417,22 @@ p {
   padding-bottom: 1rem;
 }
 
-.locations__top-searchForm {
+.locations__top-wrap-titleSearchWrap-itemTitlesWrap-title {
+  display: none;
+}
+
+.locations__top-wrap-titleSearchWrap-searchForm {
   width: 100%;
 }
 
-.locations__top-searchForm-searchWrap {
+.locations__top-wrap-titleSearchWrap-searchForm-searchWrap {
   width: 100%;
   position: relative;
   margin-bottom: 0.5rem;
   padding-right: 15%;
 }
 
-.locations__top-searchForm-searchWrap-searchInput {
+.locations__top-wrap-titleSearchWrap-searchForm-searchWrap-searchInput {
   font-size: 1rem;
   text-indent: 2.5rem;
   color: #afafaf;
@@ -445,12 +444,12 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.locations__top-searchForm-searchWrap-searchInput:focus {
+.locations__top-wrap-titleSearchWrap-searchForm-searchWrap-searchInput:focus {
   outline: none;
   border-color: #0095FF;
 }
 
-.locations__top-searchForm-searchWrap-img {
+.locations__top-wrap-titleSearchWrap-searchForm-searchWrap-img {
   position: absolute;
   bottom: 2.5rem;
   left: 1rem;
@@ -459,33 +458,927 @@ p {
 .locations__item {
   padding-bottom: 1rem;
   border-bottom: 1px solid #AFAFAF;
-}
-
-.locations__item-wrap {
-  margin-bottom: 1rem;
-}
-
-.locations__item-wrap-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.locations__item-left {
+  width: 95%;
+}
+
+.locations__item-left-wrapManagerContactCategories {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.locations__item-title {
+.locations__item-left-wrapManagerContactCategories-manager {
+  width: 10rem;
+}
+
+.locations__item-left-wrapManagerContactCategories-manager-title {
+  display: none;
+  color: #AFAFAF;
+}
+
+.locations__item-left-wrapManagerContactCategories-manager-job {
+  font-style: italic;
+}
+
+.locations__item-left-wrapManagerContactCategories-contact {
+  width: 10rem;
+}
+
+.locations__item-left-wrapManagerContactCategories-contact-title {
+  display: none;
+  color: #AFAFAF;
+}
+
+.locations__item-left-wrapManagerContactCategories-categories-title {
+  display: none;
+  color: #AFAFAF;
+}
+
+.locations__item-left-topWrap-title {
+  display: none;
+  color: #AFAFAF;
+}
+
+.locations__item-left-topWrap-arrowWrap-img {
+  display: none;
+}
+
+.locations__item-left-wrap {
+  margin-bottom: 1rem;
+}
+
+.locations__item-left-title {
   font-family: "avenir-demi";
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #323232;
 }
 
-.locations__item-para {
+.locations__item-left-para {
   font-family: "avenir-regular";
   font-size: 0.8125rem;
   line-height: 1.125rem;
   color: #323232;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations {
+    font-family: "avenir-regular";
+    padding: 0rem 1rem;
+  }
+  .locations__top-wrap {
+    width: 100%;
+  }
+  .locations__top-wrap-itemTitlesWrap {
+    display: none;
+  }
+  .locations__top-wrap-titleSearchWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations__top-wrap-titleSearchWrap-title {
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .locations__top-wrap-titleSearchWrap-itemTitlesWrap {
+    display: none;
+  }
+  .locations__top-wrap-titleSearchWrap-searchForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
+    padding-top: 0.75rem;
+  }
+  .locations__top-wrap-titleSearchWrap-searchForm-searchWrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-right: 0%;
+  }
+  .locations__top-wrap-titleSearchWrap-searchForm-searchWrap-searchInput {
+    font-size: 1rem;
+    text-indent: 2.5rem;
+    color: #afafaf;
+    background-color: #fafafa;
+    border: 2px solid #e1e1e1;
+    border-radius: 0.4rem;
+    height: 3.03rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .locations__top-wrap-titleSearchWrap-searchForm-searchWrap-searchInput:focus {
+    outline: none;
+    border-color: #0095FF;
+  }
+  .locations__top-wrap-titleSearchWrap-searchForm-searchWrap-img {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+  }
+  .locations__item-left-wrapManagerContactCategories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locations__item-left-wrapManagerContactCategories-manager {
+    width: 15rem;
+  }
+  .locations__item-left-wrapManagerContactCategories-manager-job {
+    font-style: italic;
+  }
+  .locations__item-left-wrapManagerContactCategories-contact {
+    width: 15rem;
+  }
+  .locations__item-left-wrapManagerContactCategories-categories {
+    width: 15rem;
+  }
+  .locations__item-left-topWrap {
+    margin-right: 5rem;
+  }
+  .locations__item-left-arrowWrap-img {
+    display: contents;
+  }
+  .locations__item-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+  }
+  .locations__item-para {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .locations {
+    font-family: "avenir-regular";
+    padding: 0rem 10rem;
+  }
+  .locations__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations__top-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .locations__top-wrap-titleSearchWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locations__top-wrap-titleSearchWrap-title {
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .locations__top-wrap-itemTitlesWrap {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    display: contents;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #AFAFAF;
+    margin-right: 20rem;
+  }
+  .locations__top-wrap-searchForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
+    padding-top: 0.75rem;
+  }
+  .locations__top-wrap-searchForm-searchWrap {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-right: 0%;
+  }
+  .locations__top-wrap-searchForm-searchWrap-searchInput {
+    font-size: 1rem;
+    text-indent: 2.5rem;
+    color: #afafaf;
+    background-color: #fafafa;
+    border: 2px solid #e1e1e1;
+    border-radius: 0.4rem;
+    height: 3.03rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .locations__top-wrap-searchForm-searchWrap-searchInput:focus {
+    outline: none;
+    border-color: #0095FF;
+  }
+  .locations__top-wrap-searchForm-searchWrap-img {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1rem;
+  }
+  .locations__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locations__item-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locations__item-left-wrapManagerContactCategories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations__item-left-wrapManagerContactCategories-manager-title {
+    display: content;
+  }
+  .locations__item-left-wrapManagerContactCategories-manager-job {
+    font-style: italic;
+  }
+  .locations__item-left-wrapManagerContactCategories-contact-title {
+    display: content;
+  }
+  .locations__item-left-wrapManagerContactCategories-categories-title {
+    display: content;
+  }
+  .locations__item-left-topWrap {
+    width: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locations__item-left-topWrap-words {
+    display: block;
+  }
+  .locations__item-left-topWrap-arrowWrap-img {
+    display: contents;
+  }
+  .locations__item-left-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+  }
+  .locations__item-left-para {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+}
+
+.LocationsDetails {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+
+.LocationsDetails__warehouse {
+  background-color: white;
+  width: 100%;
+  padding: 0rem 1rem;
+  padding-top: 1rem;
+}
+
+.LocationsDetails__warehouse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.LocationsDetails__warehouse-header-arrowWrap {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.LocationsDetails__warehouse-header-title {
+  font-family: "avenir-bold";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #323232;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address-line1 {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address-line2 {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address-line3 {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-address-line4 {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-contact {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-contact-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__warehouse-addressContactWrap-contact-line4 {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 1rem;
+  background-color: #FAFAFA;
+}
+
+.LocationsDetails__bottom-wrap-top {
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-product-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-product-name {
+  font-family: "avenir-bold";
+  margin-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-lastOrdered-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-lastOrdered-date {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-location-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-location-cityCountry {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-quantity-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-quantity-number {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-status-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  color: #AFAFAF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__bottom-wrap-top-status-inOut {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  padding-bottom: 0.5rem;
+}
+
+.LocationsDetails__dotsWrap {
+  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .LocationsDetails {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse {
+    width: 100%;
+    padding-top: 1rem;
+  }
+  .LocationsDetails__warehouse-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1rem;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .LocationsDetails__warehouse-header-arrowWrap {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .LocationsDetails__warehouse-header-arrowWrap-img {
+    position: relative;
+    top: 0.4rem;
+    height: 1rem;
+  }
+  .LocationsDetails__warehouse-header-title {
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse-addressContactWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2% 0%;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line1 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line2 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line3 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line4 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-contact-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-contact-line4 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0rem 1rem;
+    background-color: #FAFAFA;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .LocationsDetails__bottom-wrap-top {
+    margin-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-product {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+  }
+  .LocationsDetails__bottom-wrap-top-product-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-product-name {
+    font-family: "avenir-bold";
+    margin-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-lastOrdered-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-lastOrdered-date {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-location-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-location-cityCountry {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-quantity-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-quantity-number {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-status-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-status-inOut {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__dotsWrap {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .LocationsDetails {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse {
+    padding: 0rem 10rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  .LocationsDetails__warehouse-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1rem;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .LocationsDetails__warehouse-header-arrowWrap {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .LocationsDetails__warehouse-header-arrowWrap-img {
+    position: relative;
+    top: 0.4rem;
+    height: 1rem;
+  }
+  .LocationsDetails__warehouse-header-title {
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse-addressContactWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2% 0%;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line1 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line2 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line3 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-address-line4 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+    font-style: italic;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-contact-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__warehouse-addressContactWrap-contact-line4 {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0rem 10rem;
+    background-color: #FAFAFA;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .LocationsDetails__bottom-wrap {
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+  .LocationsDetails__bottom-wrap-top {
+    margin-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-product {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+  }
+  .LocationsDetails__bottom-wrap-top-product-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-product-name {
+    font-family: "avenir-bold";
+    margin-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-lastOrdered-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-lastOrdered-date {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-location-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-location-cityCountry {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-quantity-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-quantity-number {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-status-title {
+    font-family: "avenir-demi";
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    color: #AFAFAF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom-wrap-top-status-inOut {
+    font-family: "avenir-regular";
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #323232;
+    padding-bottom: 0.5rem;
+  }
+  .LocationsDetails__bottom__dotsWrap {
+    padding-top: 3rem;
+  }
 }
 
 /*MOBILE*/
@@ -680,6 +1573,7 @@ label {
 .product__instock-notifier-text {
   color: #FFFFFF;
   font-family: "avenir-demi";
+  margin-bottom: 0;
 }
 
 .product__hr {
