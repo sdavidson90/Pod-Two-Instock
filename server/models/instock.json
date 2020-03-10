@@ -1,8 +1,7 @@
 [
   {
-
     "warehouseId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
-    "warehouseName": "#WarehouseName",
+    "warehouseName": "Warehouse 1",
     "warehouseNumber": 1,
     "address": "469 King St W, Toronto, ON",
     "contactName": "Mara Weinberg",
@@ -12,13 +11,15 @@
     "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
     "inventory": [
       {
+        "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
         "productId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c7e11c",
-        "productName": "Product Name Here",
+        "productName": "Product 1",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "b8b6930b-d0e8-5bd3-a5d9-ee3049c6d10b",
@@ -39,13 +40,15 @@
         ]
       },
       {
+        "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
         "productId": "b0e6931c-d0e8-4ac2-a5d9-ee3049c6d10b",
-        "productName": "Product Name Here",
+        "productName": "Product 2",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "b8c6930b-e0f8-4ac2-a5e9-ee3049c6d10b",
@@ -66,13 +69,15 @@
         ]
       },
       {
+        "inventoryId": "z8z6930b-d0e8-4ac2-a5z9-ee3049c6y10x",
         "productId": "a8a6930a-d0e8-4ac2-a5d9-ee3049c6d10b",
-        "productName": "Product Name Here",
+        "productName": "Product 3",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "b8b6930b-d0e8-4ac2-a5d9-ee3049c0d10o",
@@ -96,7 +101,7 @@
   },
   {
     "warehouseId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
-    "warehouseName": "#WarehouseName",
+    "warehouseName": "Warehouse 2",
     "warehouseNumber": 1,
     "address": "469 King St W, Toronto, ON",
     "contactName": "Mara Weinberg",
@@ -106,13 +111,15 @@
     "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
     "inventory": [
       {
+        "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
         "productId": "c0b6930b-d0o7-4ac2-a5d9-ee3049c6d10b",
-        "productName": "Product Name Here",
+        "productName": "Product 1",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "b8b6930b-d0e8-4df5-a5d9-ee3049c6d10b",
@@ -133,13 +140,15 @@
         ]
       },
       {
+        "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
         "productId": "b009930b-d0e8-4ac2-a5d9-ee3049c6d10b",
-        "productName": "Product Name Here",
+        "productName": "Product 2",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "a8b6930b-d0e8-4ac2-a5d9-ie3049c6d10e",
@@ -160,13 +169,15 @@
         ]
       },
       {
+        "inventoryId": "b8b6930b-d0e8-4ac2-a5d9-ee5555c6d10b",
         "productId": "a8b7030b-d0e8-4ac2-a5d9-ee3049c6d10b",
-        "productName": "Product Name Here",
+        "productName": "Product 3",
         "description": "Here is a very brief description of the product in the inventory…",
         "lastOrdered": "05/24/2018",
         "location": "Toronto, CAN",
         "quantity": "12,000",
         "status": "In Stock",
+        "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation",
         "orderHistory": [
           {
             "orderId": "c0b6930b-d0e8-4ac2-a5d9-ee3049c6d10b",
@@ -185,5 +196,7 @@
             "orderQuantity": "12000"
           }
         ]
+      }
+    ]
   }
 ]

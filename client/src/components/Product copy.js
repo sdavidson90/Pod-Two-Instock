@@ -12,6 +12,7 @@ export default class Product extends Component {
     axios.get(`/api/`).then(response => {
       console.log(response.data[0].inventory);
       // get active inventory id then look for product id
+
       this.setState({ instock: response.data, loading: false });
     });
   }

@@ -9,13 +9,13 @@ const products = require(productsFile);
 router.get("/", (req, res) => {
   // const productsList = products.map(product => {
   //   return {
-  //     orderId: product.warehouseId
-  //     description: product.description
-  //     orderedBy: product.ordered,
-  //     reference: product.reference,
-  //     last: product.last,
-  //     location: product.location,
-  //     orderQuantity: product.quantity,
+  //     orderId: product.inventory.orderHistory[0].orderId,
+  //     description: product.inventory.description,
+  //     orderedBy: product.inventory.orderHistory[0].orderedBy,
+  //     reference: product.inventory.orderHistory[0].reference,
+  //     last: product.inventory.orderHistory[0].last,
+  //     location: product.inventory.location,
+  //     orderQuantity: product.inventory.orderHistory[0].orderQuantity,
   //     categories: product.categories
   //   };
   // });
@@ -48,11 +48,11 @@ function writeJSONFile(filename, content) {
 router.post("/", (req, res) => {
   const newProduct = {
     //how to populate the right info because the data is nested?
-    id: uuid(),
+    productId: uuid(),
     description: req.body.description,
-    ordered: req.body.ordered,
+    orderedBy: req.body.ordered,
     reference: req.body.reference,
-    last: req.body.last,
+    lastOrdered: req.body.last,
     location: req.body.location,
     quantity: req.body.quantity,
     categories: req.body.categories

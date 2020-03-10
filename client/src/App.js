@@ -6,56 +6,34 @@ import {
   Redirect
 } from "react-router-dom";
 import "./styles/main.css";
+import axios from "axios";
 import Header from "./components/Header";
 // import Inventory from "./components/Inventory";
 // import Locations from "./components/Locations";
-
-
 import Locations from "./components/Locations";
 import LocationsDetails from "./components/LocationsDetails";
 import Product from "./components/Product";
 import Inventory from "./components/Inventory";
 
-function App() {
-  return (
-
-    <div>
-      <Header />
-      {/* <Locations /> */}
-      <LocationsDetails />
-    </div>
-
-    <Router>
-      <Product />
-      {/* <Inventory /> */}
-      <Switch>
-        {/* <Route path="/locations" component={} /> */}
-        <Route path="/inventory" component={Inventory} />
-        <Route path="/product/:id" component={Product} />
-        {/* <Route path="/" component={} exact /> */}
-      </Switch>
-    </Router>
-  );
-}
-
 export default class App extends Component {
+  state = {
+    instock: [],
+    loading: true
+  };
+  componentDidMount() {
+    axios.get(`/api`).then(response => {
+      this.setState({ instock: response.data, loading: false });
+    });
+  }
+
   render() {
     return (
       <Router>
         <Header />
-        <Product />
         <Switch>
-          {/* <Route
-            path="/inventory"
-            component={Inventory}
-            products={this.state.instock}
-          />
-          <Route
-            path="/locations"
-            component={Locations}
-            locations={this.state.instock}
-          /> */}
-          <Route path="/inventory/product" component={Product} />
+          <Route path="/inventory" component={Inventory} />
+          <Route path="/location" component={Locations} />
+          <Route path="/product/:id" component={Product} />
           <Redirect to="/inventory" from="/" exact />
         </Switch>
       </Router>
