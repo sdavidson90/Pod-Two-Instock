@@ -11,7 +11,7 @@ export default class Locations extends Component {
 
   componentDidMount() {
     console.log("didMount()");
-    axios.get("/api").then(res => {
+    axios.get("/api/locations").then(res => {
       console.log("res data", res.data);
       this.setState({
         warehouseData: res.data,
@@ -56,7 +56,7 @@ export default class Locations extends Component {
           </div>
           {this.state.warehouseData.map(warehouse => {
             return (
-              <div className="locations__item">
+              <div className="locations__item" key={warehouse.warehouseId}>
                 <div className="locations__item-left">
                   <div className="locations__item-left-topWrap locations__item-topWrap">
                     <div className="locations__item-left-wrap locations__item-left-topWrap locations__item-left-topWrap-words ">
